@@ -1,55 +1,64 @@
-# Mieszkanie dla studenciaka MiNI 🏠🎓
+# Appartment for a MiNI student 
 
-### Autorzy
-**Wiktoria Grodzka | Maria Harbaty | [cite_start]Michał Grzegory** [cite: 42]
-[cite_start]*Wydział Matematyki i Nauk Informacyjnych Politechniki Warszawskiej* [cite: 40, 41]
+## Project description
+This project analyzes the housing market in Warsaw from the perspective of students and graduates of the Faculty of Mathematics and Information Science. The goal is to identify the most cost-effective apartment characteristics and estimate the time required to purchase a property under realistic financial assumptions.
 
----
+The analysis combines data-driven methods with practical considerations relevant to young professionals entering the real estate market.
 
-##  Cel projektu
-[cite_start]Projekt analizuje rynek mieszkaniowy w Warszawie, aby pomóc studentom i absolwentom MiNI podjąć decyzję o zakupie pierwszego mieszkania w świecie rosnących cen[cite: 8, 9, 10]. [cite_start]Analiza skupia się na optymalizacji kosztów pod kątem metrażu, liczby pokoi oraz lokalizacji[cite: 4, 13, 22].
+## Objectives
+- Identify the optimal apartment size in terms of price per square meter  
+- Analyze the relationship between the number of rooms and unit price  
+- Determine an optimal location balancing cost and commuting distance  
+- Estimate the time required to afford a property under different saving strategies  
 
-##  Główne Analizy
+## Key findings
 
-### 1. Najkorzystniejszy Metraż
-[cite_start]Przeanalizowano mieszkania wybudowane w Warszawie w latach 1960-2023[cite: 5].
-* **Wniosek:** Najniższa cena za metr kwadratowy występuje w przedziale **(50, 70) m²**[cite: 6].
-* [cite_start]Na tym metrażu skupiają się dalsze rozważania projektowe[cite: 6].
+### Apartment size
+The lowest price per square meter is observed for apartments in the range: **50–70 m²**.  
+This range was selected for further analysis.
 
-### 2. Liczba Pokoi
-[cite_start]Zbadano zależność między liczbą pokoi a ceną za m²[cite: 13, 15].
-* **Wniosek:** Najniższa cena jednostkowa przypada na **mieszkania trzypokojowe**[cite: 14].
+### Number of rooms
+Three-room apartments offer the most favorable price per square meter.
 
-### 3. Lokalizacja (Odległość od MiNI)
-Analiza przestrzenna ofert w Warszawie z punktem orientacyjnym na wydziale MiNI[cite: 21, 22, 25].
-* [cite_start]**Centrum:** Najwyższe ceny koncentrują się w Śródmieściu i na Mokotowie[cite: 24].
-* [cite_start]**Optymalizacja:** Wybrano zakres **5 – 7.5 km** od centrum, aby zachować balans między ceną a dojazdem[cite: 25, 26].
+### Location
+- The highest prices are concentrated in central districts and Mokotów  
+- An optimal balance between cost and accessibility is achieved at a distance of **5–7.5 km** from the city center  
 
----
+## Financial analysis
 
-##  Analiza Finansowa i Oszczędności
-[cite_start]Wyliczono czas potrzebny na zgromadzenie funduszy na wkład własny lub zakup przy następujących założeniach[cite: 34, 36]:
-* [cite_start]**Koszt lokum:** Oszacowany na poziomie **400 tys. zł** (na osobę, przy zakupie w parze)[cite: 35, 37].
-* **Zarobki:** Średnie zarobki absolwentów MiNI z rocznym wzrostem pensji o 5%[cite: 36].
-* [cite_start]**Oszczędności:** Pieniądze odkładane na konto z oprocentowaniem 4-5%[cite: 36, 39].
+**Assumptions:**
+- Estimated cost per person: approximately **400,000 PLN** (purchase in a pair)  
+- Annual salary growth: **5%**  
+- Savings invested with a return of **4–5%**  
 
-| Procent odkładanych dochodów | Szacowany wiek zakupu (w parze) |
-| :--- | :--- |
-| 10% | ok. [cite_start]45-50 lat [cite: 48, 49] |
-| **15%** | [cite_start]**37 lat** [cite: 38] |
-| 20% | ok. [cite_start]32 lata [cite: 48, 49] |
+**Results:**
 
----
+| Savings rate | Estimated age of purchase |
+|--------------|---------------------------|
+| 10%          | 45–50 years              |
+| 15%          | ~37 years                |
+| 20%          | ~32 years                |
 
-##  Technologie
-Projekt został przygotowany w środowisku **RStudio**.
-* **Język:** R
-* **Pakiety:** `ggplot2` (wizualizacje), `dplyr` (obróbka danych).
+The analysis shows that the savings rate has a significant impact on the time required to purchase a property.
 
-##  Jak korzystać z projektu?
-1. Otwórz plik projektu `.Rproj` w RStudio.
-2. Upewnij się, że masz zainstalowane niezbędne biblioteki.
-3. Uruchom skrypty, aby odtworzyć wykresy i analizę finansową.
+## Technologies
+- R  
+- ggplot2  
+- dplyr  
+- RStudio  
 
----
-[cite_start]*Projekt zrealizowany w ramach zajęć na Wydziale MiNI PW.* [cite: 40, 41]
+## How to run
+1. Open the `.Rproj` file in RStudio  
+2. Install required packages:
+   ```r
+   install.packages(c("ggplot2", "dplyr"))
+   ```
+3. Run the scripts to reproduce the analysis and visualizations  
+
+## Authors
+- Wiktoria Grodzka  
+- Maria Harbaty  
+- Michał Grzegory  
+
+## Context
+This project was developed as part of university coursework and demonstrates the application of data analysis to real-world economic decision-making.
